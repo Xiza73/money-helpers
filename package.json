@@ -1,0 +1,26 @@
+{
+  "name": "money-helpers",
+  "version": "0.1.0",
+  "description": "some helpers for working with money",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node-dev ./src/index.ts",
+    "start": "tsc && node ./dist/index.js"
+  },
+  "author": "Xiza <m.fajardo.1098@gmail.com>",
+  "devDependencies": {
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {},
+  "keywords": [
+    "money",
+    "helpers",
+    "currency",
+    "currency-converter",
+    "format",
+    "pattern"
+  ],
+  "repository": "git@github.com:Xiza73/money-helpers.git"
+}
