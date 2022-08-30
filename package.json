@@ -60,5 +60,6 @@
     "currency-converter",
     "format",
     "pattern"
-  ]
+  ],
+  "repository": "git@github.com:Xiza73/money-helpers.git"
 }
