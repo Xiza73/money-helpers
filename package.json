@@ -1,0 +1,64 @@
+{
+  "name": "money-helpers",
+  "version": "0.2.0",
+  "description": "some helpers for working with money",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "author": "Xiza <m.fajardo.1098@gmail.com>",
+  "module": "dist/money-helpers.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/money-helpers.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/money-helpers.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.0.1",
+    "husky": "^8.0.1",
+    "size-limit": "^8.0.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2"
+  },
+  "keywords": [
+    "money",
+    "helpers",
+    "currency",
+    "currency-converter",
+    "format",
+    "pattern"
+  ]
+}
